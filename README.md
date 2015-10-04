@@ -12,6 +12,23 @@ figure out what BaeBae can/will be.
 
 * Windows
   * clone repo to local disk.
-  * open command prompt and navigate to repo directory.
-  * type "node install"
-  * type "node bin/baebae.js"
+  * edit *config/default.json* with server info and bot name.
+  * open command prompt and navigate to repo directory and type:
+
+
+    node install
+
+
+after everything has installed, type:
+
+
+    node bin/baebae.js
+
+## Tests
+To run tests, type:
+
+    grunt test
+
+To generate coverage report:
+
+    grunt coverage

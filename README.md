@@ -10,11 +10,10 @@ figure out what BaeBae can/will be.
 
 ## Installation
 
-* Windows
-  * clone repo to local disk.
-  * edit *config/default.json* with server info and bot name.
-  * open command prompt and navigate to repo directory and type:
+* clone repo to local disk.
+* edit *config/default.json* with server info and bot name.
 
+open command prompt and navigate to repo directory and type:
 
 
     node install

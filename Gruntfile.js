@@ -29,6 +29,14 @@ module.exports = function(grunt) {
         }
       }
     },
+    jsdoc: {
+      dist: {
+        src: ['lib/**/*.js', 'test/**/*.js', 'README.md'],
+        options: {
+          destination: 'doc'
+        }
+      }
+    }
   });
 
   grunt.event.on('coverage', function(lcovFileContents, done){
@@ -36,6 +44,7 @@ module.exports = function(grunt) {
       done()
   })
 
+  grunt.loadNpmTasks('grunt-jsdoc')
   grunt.loadNpmTasks('grunt-mocha-istanbul')
   grunt.loadNpmTasks("grunt-mocha-cli")
   grunt.registerTask("test", ["mochacli"])

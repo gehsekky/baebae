@@ -1,6 +1,6 @@
 {
   "host": "server.goes.here",
-  "botnick": "entersomething",
+  "botnick": "baebae",
   "options": {
     "userName": "baebae",
     "realName": "baebae",
@@ -12,8 +12,25 @@
     "autoConnect": true,
     "channels": ["#bots"]
   },
+  "command-prefix": ".",
   "modules": {
     "url": {
+
+    },
+    "butts": {
+
+    },
+    "seen": {
+      "database": "baebaedb",
+      "username": "baebae",
+      "password": "baebae",
+      "host": "localhost",
+      "dbtype": "mysql"
+    },
+    "uptime": {
+
+    },
+    "irc": {
 
     }
   }

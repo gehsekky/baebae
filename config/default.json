@@ -1,16 +1,17 @@
 {
-  "host": "server.goes.here",
-  "botnick": "baebae",
+  "host": "irc.enterservernamehere.org",
+  "botnick": "botnamehere",
   "options": {
-    "userName": "baebae",
-    "realName": "baebae",
+    "userName": "namegoeshere",
+    "realName": "namegoeshere",
     "port": 6667,
     "localAddress": null,
     "debug": false,
     "showErrors": false,
     "autoRejoin": false,
     "autoConnect": true,
-    "channels": ["#bots"]
+    "channels": ["#bots"],
+    "debug": true
   },
   "command-prefix": ".",
   "modules": {
@@ -21,11 +22,14 @@
 
     },
     "seen": {
-      "database": "baebaedb",
-      "username": "baebae",
-      "password": "baebae",
-      "host": "localhost",
-      "dbtype": "mysql"
+      "database": "databasegoeshere",
+      "username": "namegoeshere",
+      "password": "namegoeshere",
+      "opts": {
+        "host": "localhost",
+        "dbtype": "mysql",
+        "logging": false
+      }
     },
     "uptime": {
 
@@ -33,5 +37,18 @@
     "irc": {
 
     }
+  },
+  "log4js": {
+    "appenders": [
+      {
+        "type": "console"
+      }, {
+        "type": "dateFile",
+        "filename": "logs/jarvis",
+        "pattern": "-yyyyMMdd.log",
+        "alwaysIncludePattern": true
+      }
+    ],
+    "replaceConsole": true
   }
 }

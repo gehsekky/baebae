@@ -11,20 +11,19 @@ figure out what BaeBae can/will be.
 ## Installation
 
 * clone repo to local disk.
-* edit *config/default.json* with server info and bot name.
+* edit *config/production.json* with server info and bot name.
 
 open command prompt and navigate to repo directory and type:
 
-
-    node install
+    npm install
 
 
 after everything has installed, type:
 
+    NODE_ENV=production NODE_PATH=./lib node bin/baebae.js
 
-    node bin/baebae.js
+## Grunt Tasks
 
-## Tests
 To run tests, type:
 
     grunt test

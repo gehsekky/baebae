@@ -14,14 +14,7 @@ describe('BaeBae test suite', function () {
 
     it('should have a null client before being initialized', function () {
       var baebae = new BaeBae()
-      assert(baebae._client === null, 'client should be null')
-    })
-  })
-
-  describe('getClient tests', function () {
-    it('should return a null client', function () {
-      var baebae = new BaeBae()
-      assert(baebae.getClient() === null, 'client should be null')
+      assert(baebae.client === null, 'client should be null')
     })
   })
 

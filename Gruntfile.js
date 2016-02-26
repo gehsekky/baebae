@@ -4,6 +4,14 @@ module.exports = function (grunt) {
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    env: {
+      options: {
+        NODE_PATH: './lib'
+      },
+      dev: {
+        NODE_ENV: 'development'
+      }
+    },
     mochacli: {
       options: {
 
@@ -64,13 +72,14 @@ module.exports = function (grunt) {
       done()
   })
 
+  grunt.loadNpmTasks('grunt-env')
   grunt.loadNpmTasks('grunt-jsdoc')
   grunt.loadNpmTasks('grunt-mocha-istanbul')
   grunt.loadNpmTasks('grunt-mocha-cli')
   grunt.loadNpmTasks('grunt-contrib-watch')
   grunt.loadNpmTasks('grunt-contrib-jshint')
 
-  grunt.registerTask('test', ['mochacli'])
+  grunt.registerTask('test', ['env:dev', 'mochacli'])
   grunt.registerTask('default', ['test'])
-  grunt.registerTask('coverage', ['mocha_istanbul:coverage'])
+  grunt.registerTask('coverage', ['env:dev', 'mocha_istanbul:coverage'])
 }

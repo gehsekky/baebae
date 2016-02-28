@@ -10,14 +10,16 @@
     "showErrors": false,
     "autoRejoin": false,
     "autoConnect": true,
-    "channels": ["#bots"],
-    "debug": true
+    "channels": ["#bots"]
   },
   "command-prefix": ".",
+  "enabled-modules": [
+    "url",
+    "uptime",
+    "irc",
+    "seen"
+  ],
   "modules": {
-    "url": {
-
-    },
     "seen": {
       "database": "databasegoeshere",
       "username": "namegoeshere",
@@ -28,11 +30,15 @@
         "logging": false
       }
     },
-    "uptime": {
-
-    },
-    "irc": {
-
+    "quote": {
+      "database": "databasegoeshere",
+      "username": "namegoeshere",
+      "password": "namegoeshere",
+      "opts": {
+        "host": "localhost",
+        "dbtype": "mysql",
+        "logging": false
+      }
     }
   },
   "log4js": {

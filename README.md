@@ -11,6 +11,7 @@ figure out what BaeBae can/will be.
 ## Installation
 
 * clone repo to local disk.
+* copy *config/default.json* to *config/production.json* or whatever environment you want (eg. development.json, test.json, staging.json)
 * edit *config/production.json* with server info and bot name.
 
 open command prompt and navigate to repo directory and type:
@@ -20,7 +21,7 @@ open command prompt and navigate to repo directory and type:
 
 after everything has installed, type:
 
-    NODE_ENV=production NODE_PATH=./lib node bin/baebae.js
+    NODE_ENV=production node bin/baebae.js
 
 ## Grunt Tasks
 

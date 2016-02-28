@@ -5,6 +5,9 @@
 'use strict'
 
 var BaeBae = require('../lib/baebae')
+let log4js = require('log4js')
+
+log4js.replaceConsole()
 
 try {
   // initiate awesomeness

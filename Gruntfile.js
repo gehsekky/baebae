@@ -10,6 +10,9 @@ module.exports = function (grunt) {
       },
       dev: {
         NODE_ENV: 'development'
+      },
+      test: {
+        NODE_ENV: 'test'
       }
     },
     mochacli: {
@@ -79,7 +82,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch')
   grunt.loadNpmTasks('grunt-contrib-jshint')
 
-  grunt.registerTask('test', ['env:dev', 'mochacli'])
+  grunt.registerTask('test', ['env:test', 'mochacli'])
   grunt.registerTask('default', ['test'])
-  grunt.registerTask('coverage', ['env:dev', 'mocha_istanbul:coverage'])
+  grunt.registerTask('coverage', ['env:test', 'mocha_istanbul:coverage'])
 }

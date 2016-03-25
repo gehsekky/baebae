@@ -21,15 +21,15 @@
   },
   "devDependencies": {
     "chai": "^3.3.0",
-    "grunt": "^0.4.5",
-    "grunt-cli": "^1.1.0",
-    "grunt-contrib-jshint": "^1.0.0",
-    "grunt-contrib-watch": "^1.0.0",
-    "grunt-env": "^0.4.4",
-    "grunt-jsdoc": "^1.0.0",
-    "grunt-mocha-cli": "^2.0.0",
-    "grunt-mocha-istanbul": "^3.0.1",
+    "gulp": "^3.9.1",
+    "gulp-istanbul": "^0.10.3",
+    "gulp-jsdoc3": "^0.2.1",
+    "gulp-jshint": "^2.0.0",
+    "gulp-jsonlint": "^1.1.2",
+    "gulp-mocha": "^2.2.0",
+    "gulp-process-env": "0.0.1",
     "istanbul": "^0.4.2",
+    "jshint": "^2.9.1",
     "mocha": "^2.3.3"
   }
 }

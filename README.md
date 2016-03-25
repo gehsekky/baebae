@@ -23,12 +23,3 @@ after everything has installed, type:
 
     NODE_ENV=production node bin/baebae.js
 
-## Grunt Tasks
-
-To run tests, type:
-
-    grunt test
-
-To generate coverage report:
-
-    grunt coverage

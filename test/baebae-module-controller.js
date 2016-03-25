@@ -1,7 +1,6 @@
 /* jshint expr: true */
 'use strict'
 
-let mocha         = require('mocha')
 let chai          = require ('chai')
 let assert        = chai.assert
 let expect        = chai.expect

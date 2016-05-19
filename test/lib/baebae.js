@@ -4,7 +4,7 @@
 let chai   = require('chai')
 let assert = chai.assert
 let expect = chai.expect
-let BaeBae = require('../lib/baebae')
+let BaeBae = require('../../lib/baebae')
 
 describe('BaeBae test suite', () => {
   let baebae = null

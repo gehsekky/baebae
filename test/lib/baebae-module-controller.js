@@ -4,8 +4,8 @@
 let chai          = require ('chai')
 let assert        = chai.assert
 let expect        = chai.expect
-let BaeBae        = require('baebae')
-let ModController = require('baebae-module-controller')
+let BaeBae        = require('../../lib/baebae')
+let ModController = require('../../lib/baebae-module-controller')
 
 describe('BaeBaeModuleController test suite', () => {
   describe('constructor tests', () => {

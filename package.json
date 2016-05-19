@@ -10,26 +10,27 @@
   "license": "MIT",
   "dependencies": {
     "cheerio": "^0.20.0",
-    "config": "^1.16.0",
-    "irc": "^0.4.0",
-    "lodash": "^4.6.1",
-    "log4js": "^0.6.33",
-    "moment": "^2.12.0",
-    "mysql": "^2.9.0",
-    "request": "^2.64.0",
-    "sequelize": "^3.20.0"
+    "config": "^1.20.1",
+    "irc": "^0.5.0",
+    "lodash": "^4.11.2",
+    "moment": "^2.13.0",
+    "mysql": "^2.10.2",
+    "request": "^2.72.0",
+    "sequelize": "^3.23.0"
   },
   "devDependencies": {
-    "chai": "^3.3.0",
+    "chai": "^3.5.0",
     "gulp": "^3.9.1",
-    "gulp-istanbul": "^0.10.3",
+    "gulp-istanbul": "^0.10.4",
     "gulp-jsdoc3": "^0.2.1",
     "gulp-jshint": "^2.0.0",
     "gulp-jsonlint": "^1.1.2",
     "gulp-mocha": "^2.2.0",
     "gulp-process-env": "0.0.1",
-    "istanbul": "^0.4.2",
-    "jshint": "^2.9.1",
-    "mocha": "^2.3.3"
+    "istanbul": "^0.4.3",
+    "jshint": "^2.9.2",
+    "mocha": "^2.4.5",
+    "winston": "^2.2.0",
+    "winston-daily-rotate-file": "^1.0.1"
   }
 }

@@ -5,16 +5,30 @@
 'use strict'
 
 var BaeBae = require('../lib/baebae')
-let log4js = require('log4js')
+let winston = require('winston')
 
-log4js.replaceConsole()
+var logger = new (winston.Logger)({
+  transports: [
+    new (winston.transports.Console)({
+      colorize: true,
+      showLevel:true,
+      json: false,
+      level: 'info'
+    }),
+    new (require('winston-daily-rotate-file'))({
+      dirname: 'logs',
+      filename: 'baebae.log'
+    })
+  ]
+})
+
 
 try {
   // initiate awesomeness
-  var bot = new BaeBae()
+  var bot = new BaeBae(logger)
   bot.initialize()
 } catch (err) {
-  console.error(err)
+  logger.error(err.stack)
 }
 
 module.exports = bot

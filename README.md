@@ -23,3 +23,6 @@ after everything has installed, type:
 
     NODE_ENV=production node bin/baebae.js
 
+## Development
+
+* https://trello.com/b/RCFBzOkC

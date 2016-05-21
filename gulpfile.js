@@ -26,7 +26,7 @@ gulp.task('jshint', () => {
     esversion: 6,
     node: true,
     undef: true,
-    unused: true,
+    unused: false,
     devel: true,
     mocha: true
   }))

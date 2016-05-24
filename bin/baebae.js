@@ -1,20 +1,25 @@
 #!/usr/bin/env node
+
 /**
  * The main application driver for BaeBae.
  */
 'use strict'
 
-var BaeBae = require('../lib/baebae')
+let BaeBae  = require('../lib/baebae')
 let winston = require('winston')
 
-var logger = new (winston.Logger)({
+// initialize logger
+let logger = new (winston.Logger)({
   transports: [
+    // write to console
     new (winston.transports.Console)({
       colorize: true,
       showLevel:true,
       json: false,
       level: 'info'
     }),
+
+    // write to daily rotation log file
     new (require('winston-daily-rotate-file'))({
       dirname: 'logs',
       filename: 'baebae.log'
@@ -22,10 +27,11 @@ var logger = new (winston.Logger)({
   ]
 })
 
-
+let bot = null
 try {
   // initiate awesomeness
-  var bot = new BaeBae(logger)
+  bot = new BaeBae()
+  bot.setLogger(logger)
   bot.initialize()
 } catch (err) {
   logger.error(err.stack)

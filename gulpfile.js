@@ -1,11 +1,11 @@
 'use strict'
 
-let gulp = require('gulp')
-let jshint = require('gulp-jshint')
-let gulpMocha = require('gulp-mocha')
-let istanbul = require('gulp-istanbul')
-let jsonlint = require('gulp-jsonlint')
-let jsdoc = require('gulp-jsdoc3')
+let gulp       = require('gulp')
+let jshint     = require('gulp-jshint')
+let gulpMocha  = require('gulp-mocha')
+let istanbul   = require('gulp-istanbul')
+let jsonlint   = require('gulp-jsonlint')
+let jsdoc      = require('gulp-jsdoc3')
 let processEnv = require('gulp-process-env')
 
 let jsFiles = [

@@ -2,8 +2,9 @@
 logs
 *.log
 
-# dev config
+# env config
 config/development.json
+config/production.json
 
 # Runtime data
 pids

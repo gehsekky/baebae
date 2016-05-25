@@ -42,7 +42,7 @@ gulp.task('jsonlint', () => {
 
 gulp.task('pre-test', function () {
   return gulp.src([
-    'test/**/*.js'
+    'lib/**/*.js'
   ])
   // Covering files
   .pipe(istanbul())
@@ -68,6 +68,9 @@ gulp.task('test', ['pre-test'], () => {
   }))
   .pipe(istanbul.writeReports())
   .pipe(env.restore())
+  .once('end', function () {
+    process.exit()
+  })
 })
 
 gulp.task('jsdoc', () => {

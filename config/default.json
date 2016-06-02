@@ -43,7 +43,9 @@
     "reddit-link-log": {
       "username": "namegoeshere",
       "password": "passwordgoeshere",
-      "subreddit": "subredditgoeshere"
+      "subreddit": "subredditgoeshere",
+      "clientId": "clientidgoeshere",
+      "appSecret": "secretgoeshere"
     }
   },
   "log4js": {

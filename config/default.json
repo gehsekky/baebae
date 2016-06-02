@@ -23,7 +23,7 @@
     "seen": {
       "database": "databasegoeshere",
       "username": "namegoeshere",
-      "password": "namegoeshere",
+      "password": "passwordgoeshere",
       "opts": {
         "host": "localhost",
         "dbtype": "mysql",
@@ -33,12 +33,17 @@
     "quote": {
       "database": "databasegoeshere",
       "username": "namegoeshere",
-      "password": "namegoeshere",
+      "password": "passwordgoeshere",
       "opts": {
         "host": "localhost",
         "dbtype": "mysql",
         "logging": false
       }
+    },
+    "reddit-link-log": {
+      "username": "namegoeshere",
+      "password": "passwordgoeshere",
+      "subreddit": "subredditgoeshere"
     }
   },
   "log4js": {

@@ -1,6 +1,6 @@
 {
   "name": "baebae",
-  "version": "1.1",
+  "version": "1.1.0",
   "description": "An IRC bot written in node js.",
   "main": "index.js",
   "scripts": {
@@ -10,25 +10,26 @@
   "license": "MIT",
   "dependencies": {
     "cheerio": "^0.20.0",
-    "config": "^1.20.3",
+    "config": "^1.21.0",
     "irc": "^0.5.0",
     "moment": "^2.13.0",
     "mysql": "^2.10.2",
-    "sequelize": "^3.23.2"
+    "raw.js": "^0.4.0",
+    "sequelize": "^3.23.3"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "gulp": "^3.9.1",
     "gulp-istanbul": "^0.10.4",
-    "gulp-jsdoc3": "^0.2.1",
+    "gulp-jsdoc3": "^0.3.0",
     "gulp-jshint": "^2.0.1",
     "gulp-jsonlint": "^1.1.2",
     "gulp-mocha": "^2.2.0",
     "gulp-process-env": "0.0.1",
     "istanbul": "^0.4.3",
     "jshint": "^2.9.2",
-    "mocha": "^2.4.5",
+    "mocha": "^2.5.3",
     "winston": "^2.2.0",
-    "winston-daily-rotate-file": "^1.1.0"
+    "winston-daily-rotate-file": "^1.1.1"
   }
 }

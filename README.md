@@ -4,6 +4,8 @@ An IRC bot written in node js meant to be extremely simple and modular. It's
 mostly a wrapper around the npm irc library for now, but I'm still trying to
 figure out what BaeBae can/will be.
 
+[![Build Status](https://travis-ci.org/gehsekky/baebae.svg?branch=master)](https://travis-ci.org/gehsekky/baebae)
+
 ## Requirements
 
 * node - https://nodejs.org/en/ (developed/tested with 6.1.0)

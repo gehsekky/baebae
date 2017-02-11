@@ -5,11 +5,11 @@
  */
 'use strict'
 
-let BaeBae  = require('../lib/baebae')
-let winston = require('winston')
+const BaeBae  = require('../lib/baebae')
+const winston = require('winston')
 
 // initialize logger
-let logger = new (winston.Logger)({
+const logger = new (winston.Logger)({
   transports: [
     // write to console
     new (winston.transports.Console)({

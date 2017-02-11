@@ -6,7 +6,7 @@ figure out what BaeBae can/will be.
 
 ## Requirements
 
-* node - https://nodejs.org/en/
+* node - https://nodejs.org/en/ (developed/tested with 6.1.0)
 
 ## Installation
 
@@ -23,6 +23,17 @@ after everything has installed, type:
 
     NODE_ENV=production node bin/baebae.js
 
+## Usage
+
+Some commands that are currently supported:
+
+* `uptime` - displays how long it's been since the bot has been started
+* `quote` - displays random quote
+  * `add <text>` - adds quote
+  * `show <id>` - show quote
+  * `remove <id>` - removes quote from db
+  * `search <text>` - search for quote ('*' is wildcard)
+
 ## Development
 
-* https://trello.com/b/RCFBzOkC
+* https://trello.com/b/RCFBzOkC - development kanban board

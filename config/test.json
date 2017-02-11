@@ -15,7 +15,8 @@
   "command-prefix": ".",
   "enabled-modules": [
     "test",
-    "test-with-error"
+    "test-with-error",
+    "uptime"
   ],
   "modules": {
     "seen": {

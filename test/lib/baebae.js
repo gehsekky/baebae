@@ -9,15 +9,35 @@ let BaeBae = require('../../lib/baebae')
 describe('BaeBae test suite', () => {
   let baebae = null
 
-  describe('constructor tests', () => {
-    it('should not throw an error with no params', () => {
-      assert.doesNotThrow(() => {
-        baebae = new BaeBae()
-      })
+  it('should be able to instantiate', () => {
+    assert.doesNotThrow(() => {
+      baebae = new BaeBae()
     })
 
-    it('should not be null', () => {
-      expect(baebae).to.not.be.null
+    expect(baebae).to.not.be.null
+  })
+
+  it('should set logger', () => {
+    let logger = {
+      info: function (data) {
+        console.log(data)
+      },
+      error: function (err) {
+        console.error(err)
+      },
+      testMessage: 'verified'
+    }
+    assert.doesNotThrow(() => {
+      baebae.setLogger(logger)
+    })
+
+    expect(baebae.logger.testMessage).to.be.equal('verified')
+  })
+
+  it('should initialize', (done) => {
+    assert.doesNotThrow(() => {
+      baebae.initialize()
+      done()
     })
   })
 })

@@ -4,11 +4,14 @@ An IRC bot written in node js meant to be extremely simple and modular. It's
 mostly a wrapper around the npm irc library for now, but I'm still trying to
 figure out what BaeBae can/will be.
 
-[![Build Status](https://travis-ci.org/gehsekky/baebae.svg?branch=master)](https://travis-ci.org/gehsekky/baebae)
+[![Build Status](https://travis-ci.org/gehsekky/baebae.svg?branch=master)](https://travis-ci.org/gehsekky/baebae) dev
+
+[![Build Status](https://travis-ci.org/gehsekky/baebae.svg?branch=master)](https://travis-ci.org/gehsekky/baebae) master
 
 ## Requirements
 
-* node - https://nodejs.org/en/ (developed/tested with 6.1.0)
+* nodeJS - https://nodejs.org/en/ (at least 6.0.x)
+* yarn package manager - https://yarnpkg.com/en/
 
 ## Installation
 
@@ -18,8 +21,7 @@ figure out what BaeBae can/will be.
 
 open command prompt and navigate to repo directory and type:
 
-    npm install
-
+    yarn install
 
 after everything has installed, type:
 

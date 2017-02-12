@@ -14,8 +14,6 @@
   },
   "command-prefix": ".",
   "enabled-modules": [
-    "test",
-    "test-with-error",
     "uptime"
   ],
   "modules": {

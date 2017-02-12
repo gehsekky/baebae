@@ -5,7 +5,6 @@ let config        = require('config')
 let chai          = require('chai')
 let assert        = chai.assert
 let expect        = chai.expect
-let BaeBae        = require('../../lib/baebae')
 let ModController = require('../../lib/baebae-module-controller')
 
 describe('BaeBaeModuleController test suite', () => {
@@ -15,7 +14,8 @@ describe('BaeBaeModuleController test suite', () => {
     assert.doesNotThrow(() => {
       modController = new ModController({
         client: {
-          addListener: function () {}
+          addListener: () => null,
+          say: () => null
         },
         logger: {
           info: function (data) {

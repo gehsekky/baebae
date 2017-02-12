@@ -4,7 +4,8 @@
   "description": "An IRC bot written in node js.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test"
+    "lint": "gulp lint",
+    "test": "gulp test"
   },
   "author": "gehsekky",
   "license": "MIT",
@@ -13,21 +14,21 @@
     "irc": "^0.5.0",
     "moment": "^2.14.0",
     "mysql": "^2.11.1",
-    "raw.js": "^0.4.0",
+    "raw.js": "^0.6.0",
+    "request": "^2.79.0",
     "sequelize": "^3.24.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "config": "^1.21.0",
     "gulp": "^3.9.1",
-    "gulp-istanbul": "^0.10.4",
+    "gulp-eslint": "^3.0.1",
+    "gulp-istanbul": "^1.1.1",
     "gulp-jsdoc3": "^1.0.1",
-    "gulp-jshint": "^2.0.1",
     "gulp-jsonlint": "^1.1.2",
     "gulp-mocha": "^3.0.1",
-    "gulp-process-env": "0.0.1",
+    "gulp-process-env": "^0.0.2",
     "istanbul": "^0.4.5",
-    "jshint": "^2.9.3",
     "mocha": "^3.2.0",
     "winston": "^2.2.0",
     "winston-daily-rotate-file": "^1.3.0",

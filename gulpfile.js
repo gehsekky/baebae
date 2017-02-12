@@ -1,37 +1,22 @@
 'use strict'
 
 let gulp       = require('gulp')
-let jshint     = require('gulp-jshint')
 let gulpMocha  = require('gulp-mocha')
 let istanbul   = require('gulp-istanbul')
 let jsonlint   = require('gulp-jsonlint')
+let eslint     = require('gulp-eslint')
 let jsdoc      = require('gulp-jsdoc3')
 let processEnv = require('gulp-process-env')
-
-let jsFiles = [
-  'gulpfile.js',
-  'lib/**/*.js',
-  'bin/**/*.js',
-  'test/**/*.js'
-]
 
 gulp.task('default', function() {
   // place code for your default task here
 })
 
-gulp.task('jshint', () => {
-  return gulp.src(jsFiles)
-  .pipe(jshint({
-    asi: true,
-    esversion: 6,
-    node: true,
-    undef: true,
-    unused: false,
-    sub: true,
-    devel: true,
-    mocha: true
-  }))
-  .pipe(jshint.reporter('default'))
+gulp.task('lint', () => {
+  return gulp.src(['**/*.js', '!node_modules/**', '!docs/**', '!coverage/**', '!logs/**'])
+  .pipe(eslint())
+  .pipe(eslint.format())
+  .pipe(eslint.failAfterError())
 })
 
 gulp.task('jsonlint', () => {

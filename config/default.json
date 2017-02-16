@@ -17,7 +17,8 @@
     "url",
     "uptime",
     "irc",
-    "seen"
+    "seen",
+    "weather"
   ],
   "modules": {
     "seen": {
@@ -46,6 +47,9 @@
       "subreddit": "subredditgoeshere",
       "clientId": "clientidgoeshere",
       "appSecret": "secretgoeshere"
+    },
+    "weather": {
+      "apiKey": "api-key-goes-here"
     }
   },
   "log4js": {

@@ -18,7 +18,8 @@
     "uptime",
     "irc",
     "seen",
-    "weather"
+    "weather",
+    "version"
   ],
   "modules": {
     "seen": {

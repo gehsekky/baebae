@@ -3,29 +3,21 @@
 let gulp       = require('gulp')
 let gulpMocha  = require('gulp-mocha')
 let istanbul   = require('gulp-istanbul')
-let jsonlint   = require('gulp-jsonlint')
 let eslint     = require('gulp-eslint')
-let jsdoc      = require('gulp-jsdoc3')
 let processEnv = require('gulp-process-env')
 
-gulp.task('default', function() {
+gulp.task('default', ['lint', 'test'], () => {
   // place code for your default task here
 })
 
 gulp.task('lint', () => {
-  return gulp.src(['**/*.js', '!node_modules/**', '!docs/**', '!coverage/**', '!logs/**'])
+  return gulp.src(['**/*.js', '!node_modules/**', '!coverage/**', '!logs/**'])
   .pipe(eslint())
   .pipe(eslint.format())
   .pipe(eslint.failAfterError())
 })
 
-gulp.task('jsonlint', () => {
-  return gulp.src('config/**/*.json')
-  .pipe(jsonlint())
-  .pipe(jsonlint.reporter())
-})
-
-gulp.task('pre-test', function () {
+gulp.task('pre-test', () => {
   return gulp.src([
     'lib/**/*.js'
   ])
@@ -56,15 +48,4 @@ gulp.task('test', ['pre-test'], () => {
   .once('end', function () {
     process.exit()
   })
-})
-
-gulp.task('jsdoc', () => {
-  return gulp.src([
-    'lib/**/*.js'
-  ])
-  .pipe(jsdoc({
-    opts: {
-      destination: './docs'
-    }
-  }))
 })
